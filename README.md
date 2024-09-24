@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Project Description: Password Generator
 
-## Getting Started
+Day 10: Password Generator
 
-First, run the development server:
+Overview: The Password Generator is a versatile tool designed to help users create strong, random passwords tailored to their security needs. This project emphasizes user-friendly interaction while ensuring robust password generation capabilities.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Key Features:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Customizable Password Length: Users can specify the desired password length, ranging from 8 to 32 characters.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Character Type Selection: Options to include:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Uppercase Letters
 
-## Learn More
+Lowercase Letters
 
-To learn more about Next.js, take a look at the following resources:
+Numbers
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Special Symbols
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Password Generation: With a simple click, the application generates a secure password based on the selected criteria.
 
-## Deploy on Vercel
+Clipboard Functionality: Users can easily copy the generated password to their clipboard for convenient use in secure applications.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Technical Details:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built with React, utilizing state management to handle user input and password generation.
+
+Incorporates accessible UI components for a seamless user experience.
+
+Implements checks to ensure at least one character type is selected before generating a password.
+
+This project marks the tenth endeavor in a series of 30 days of projects as part of the Governor IT Initiative program, aimed at enhancing practical skills in software development.
