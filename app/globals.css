@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 100% 98%; /* Light pastel background */
+    --foreground: 240 100% 20%; /* Dark text for contrast */
+
+    --card: 255 255 255; /* White card background */
+    --card-foreground: 240 100% 20%; /* Dark text on card */
+
+    --primary: 230 100% 50%; /* Vibrant blue */
+    --primary-foreground: 255 255 255; /* White text for primary */
+
+    --secondary: 255 200 100; /* Soft yellow */
+    --secondary-foreground: 240 100% 20%; /* Dark text on secondary */
+
+    --accent: 60 100% 50%; /* Bright green */
+    --accent-foreground: 255 255 255; /* White text for accent */
+
+    --muted: 210 20% 96%; /* Light gray for muted elements */
+    --muted-foreground: 240 100% 20%; /* Dark text for muted */
+
+    --border: 210 20% 90%; /* Light border color */
+    --input: 210 20% 95%; /* Light input background */
+    --ring: 240 100% 30%; /* Soft shadow effect */
+
+    --radius: 0.5rem; /* Rounded corners */
+  }
+
+  .dark {
+    --background: 240 100% 10%; /* Dark background for dark mode */
+    --foreground: 255 255 255; /* Light text for contrast in dark mode */
+
+    --card: 30 30% 20%; /* Darker card background */
+    --card-foreground: 255 255 255; /* Light text on card in dark mode */
+
+    --primary: 50 100% 50%; /* Bright teal for primary */
+    --primary-foreground: 240 100% 98%; /* Light text for primary */
+
+    --secondary: 20 100% 50%; /* Rich maroon for secondary */
+    --secondary-foreground: 255 255 255; /* White text on secondary */
+
+    --accent: 300 100% 50%; /* Bright pink for accent */
+    --accent-foreground: 255 255 255; /* White text for accent */
+
+    --border: 30 30% 30%; /* Darker border color for dark mode */
+    --input: 40 20% 20%; /* Dark input background */
+    --ring: 240 100% 70%; /* Lighter shadow effect in dark mode */
+  }
+}
+
+body {
+  font-family: var(--font-inter), sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-inter), sans-serif;
+  font-weight: bold; /* Bold headings for emphasis */
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
